@@ -36,7 +36,7 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     <div class="recept-blok">
 
-  <div class="naam">
+  <div class="naam"> 
    <h3><?php echo $recept["naam"] ?></h3>
   </div>
   <img src="images/<?php echo $recept["foto"] ?>">
