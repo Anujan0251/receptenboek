@@ -1,6 +1,8 @@
 <?php
 require "database.php";
 //de sql query
+
+
 $sql = "SELECT * FROM recepten";
 //hier wordt de query uitgevoerd met de database
 $result = mysqli_query($conn, $sql);
@@ -30,20 +32,20 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <a class="cta" href="contact.php"><button>Contact</button></a>
       </header> 
       <img class="banner" src="/images/banner1.png" />
-<div class="flex-container">
+    <div class="flex-container">
 
-  <?php foreach ($all_recepten as $recept) : ?>
+            <?php foreach ($all_recepten as $recept) : ?>
+                <a href="recept.php?id=<?php echo $recept['id']?>">
+                <div class="recept-blok">
 
-    <div class="recept-blok">
+                    <div class="naam"> 
+                        <h3><?php echo $recept["naam"] ?></h3>
+                    </div>
+                    <img src="images/<?php echo $recept["foto"] ?>"/>
+                </div>
+                </a>
+        <?php endforeach  ?>
+    </div>
 
-  <div class="naam"> 
-   <h3><?php echo $recept["naam"] ?></h3>
-  </div>
-  <img src="images/<?php echo $recept["foto"] ?>">
-</div>
 
-  <?php endforeach  ?>
-
-</body>
-
-</html>
+ <?php include 'footer.php' ?>

@@ -101,3 +101,25 @@ main{
 body{
   background-color: white;
 }
+footer{
+  display: flex;
+  margin: 0;
+  justify-content: space-evenly;
+
+  bottom:  0px;
+  height: 100px;
+  background-color: url(site/images/zims-website-19.jpg);
+  font-weight: bold;
+  left: 0;
+  right: 0;
+
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
