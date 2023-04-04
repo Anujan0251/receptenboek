@@ -44,6 +44,9 @@ header {
 .navlinks li a:hover {
   color: #0088a9;
 }
+ul {
+  list-style-type: none;
+}
 
 button {
   padding: 9px 25px;
@@ -65,7 +68,7 @@ main{
 
 .flex-container {
   display: flex;
-  background-color: white;
+  background-color: rgb(10, 8, 8);
   width: 100%;
   gap:30px;
   justify-content: center;
@@ -76,7 +79,7 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(26, 22, 22);
   padding: 20px;
   font-size: 30px;
   height: 100%;
@@ -120,6 +123,11 @@ footer{
   bottom: 0;
   width: 100%;
   background-color: red;
-  color: white;
+  color: rgb(26, 12, 12);
   text-align: center;
+}
+.navbar {
+  display: flex;
+  background-color: black;
+  list-style-type: none;
 }

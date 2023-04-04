@@ -25,14 +25,14 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <nav> 
           <ul class="nav__links">
             <li><a href="index.php">home</a></li>
-            <li><a href="index.php">contact</a></li>
-            <li><a href="index.php">contact</a></li>
+            <li><a href="recept.php">contact</a></li>
+            <li><a href="special.php">specials</a></li>
           </ul>
         </nav>
         <a class="cta" href="contact.php"><button>Contact</button></a>
       </header> 
       <img class="banner" src="/images/banner1.png" />
-    <div class="flex-container">
+      <div class="flex-container">
 
             <?php foreach ($all_recepten as $recept) : ?>
                 <a href="recept.php?id=<?php echo $recept['id']?>">
@@ -47,5 +47,6 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <?php endforeach  ?>
     </div>
 
+    
 
  <?php include 'footer.php' ?>
