@@ -1,14 +1,12 @@
 <?php
-require "database.php";
-//de sql query
-
+require 'database.php';
 
 $sql = "SELECT * FROM recepten";
-//hier wordt de query uitgevoerd met de database
-$result = mysqli_query($conn, $sql);
-$all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
-?>
 
+$result = mysqli_query($conn, $sql);
+
+$all_recepten = mysqli_fetch_all($result,MYSQLI_ASSOC);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,12 +15,9 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        
-        <?php include 'navbar.php' ?>
+<?php include 'navbar.php' ?>
       </header> 
       <img class="banner" src="/images/banner1.png" />
       <div class="recepten-container">
@@ -43,3 +38,5 @@ $all_recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
     
 
  <?php include 'footer.php' ?>
+</body>
+</html>

@@ -24,26 +24,25 @@ header {
   background-color: rgb(85, 83, 83);
 }
 
+
+
 .logo {
   cursor: pointer;
 }
 
-.navlinks {
+.nav a {
   list-style: none;
+  color: whitesmoke;
+  display: flex;
+  display: inline ;
+ justify-content: space-between;
+
 }
 
-.navlinks li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.navlinks li a {
-  transition: all 0.3s ease 0s;
-}
-
-.navlinks li a:hover {
+.navlinks a:hover {
   color: #0088a9;
 }
+
 ul {
   list-style-type: none;
 }
@@ -61,37 +60,29 @@ button:hover {
   background-color: rgba(0, 136, 169, 0, 8);
 }
 
-main{
-    background-color: rgb(255, 255, 255);
-    height: auto;
+main {
+ 
+  height: auto;
 }
 
 .flex-container {
   display: flex;
+  flex-direction: column;
   background-color: rgb(10, 8, 8);
   width: 100%;
-  gap:30px;
+  gap: 30px;
   justify-content: center;
 }
 
-.flex-container > div {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(26, 22, 22);
-  padding: 20px;
-  font-size: 30px;
-  height: 100%;
-}
 
-.flex-container img{
+
+.flex-container img {
   max-width: 245px;
-  border-radius: 10px; 
+  border-radius: 10px;
   transition: transform .2s;
 }
 
-.flex-container img:hover{
+.flex-container img:hover {
   transform: scale(1.1);
 }
 
@@ -101,15 +92,14 @@ main{
   background-position: center;
 }
 
-body{
-  background-color: white;
-}
-footer{
+
+
+footer {
   display: flex;
   margin: 0;
   justify-content: space-evenly;
 
-  bottom:  0px;
+  bottom: 0px;
   height: 100px;
   background-color: url(site/images/zims-website-19.jpg);
   font-weight: bold;
@@ -117,17 +107,38 @@ footer{
   right: 0;
 
 }
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: rgb(26, 12, 12);
-  text-align: center;
-}
+
+
+
 .navbar {
   display: flex;
   background-color: black;
   list-style-type: none;
+}
+.recepten-container{
+  display: flex;
+  background-color: rgb(10, 8, 8);
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+}
+
+.recepten-container img {
+
+  height: 250px;
+  width: 245px;
+ 
+}
+.recepten-container img:hover {
+  transform: scale(1.1);
+}
+.foto-speciaal{
+
+  width: 40px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  margin: auto;
+  padding-bottom: 30px;
+  justify-content: baseline;
 }

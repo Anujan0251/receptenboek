@@ -33,14 +33,32 @@ $all_users = mysqli_fetch_all($result);
 </head>
 
 <body>
-    
+
     <?php include 'navbar.php' ?>
+    <div style="align-content: center;">
+        <h1><?php echo  $all_recepten['naam'] ?></h1>
+    </div>
+    <div>
+        <img class="foto-special"  src="images/<?php echo $all_recepten["foto"] ?>" />
+    </div>
 
-    <img src="images/<?php echo $all_recepten["foto"] ?>" />
-
+    <h3>beschrijving</h3>
     <p><?php echo $all_recepten['beschrijving']; ?></p>
+
+    <h3>afkoeltijd</h3>
     <p><?php echo $all_recepten['afkoeltijd']; ?></p>
+
+    <h3>ingredienten</h3>
     <p><?php echo $all_recepten['ingredienten']; ?></p>
+
+    <h3>tijdsduur</h3>
+    <p><?php echo $all_recepten['tijdsduur']; ?></p>
+
+    <h3>aantal ingredienten</h3>
+    <p><?php echo $all_recepten['aantal_ingredienten']; ?></p>
+
+    <h3>aantal personen</h3>
+    <p><?php echo $all_recepten['aantal_personen']; ?></p>
 
 
 
